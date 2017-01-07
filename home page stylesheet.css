@@ -7,26 +7,37 @@ body {
   border: 0;
 }
 
-
+/* classes*/
 
 .card {
   background-color: white;
-  width: 75%;
+  width: 90%;
   height: auto;
-  overflow: visible;;
+  overflow: visible;
+  margin: 40px;
+
 }
 
 .cardHeading {
   font-family: 'Roboto',serif;
-  font-size: 40px;
+  font-size: 70px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.cardContent {
+  font-family:  'Open Sans', sans-serif;
+  font-size: 20px;
 }
 
 .center-horizontal{
   margin: 0 auto;
 }
 
+/* IDs */
+
 #mainHeader {
-	font-family:Impact, Charcoal, sans-serif;
+	font-family:'Roboto',serif;
   word-spacing: auto;
   letter-spacing: 20px;
   font-size: 75px;
@@ -47,9 +58,25 @@ body {
   top: 50px;
 }
 
+#navList {
+  list-style-type: none;
+  align: center;
+  margin: 0 auto;
+}
+
 #cardStack{
-  width: 75%;
+  width: 90%;
   height: auto;
   background: none;
-  margin-top: 50px;
+  margin-top: 150px;
+}
+
+/* Type */
+li{
+  display: inline;
+  color: white;
+  font-size: 20px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 16px;
 }
