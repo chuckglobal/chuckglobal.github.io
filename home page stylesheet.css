@@ -1,0 +1,55 @@
+*{margin: 0; }
+
+body {
+  background-color: #263238;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+
+.card {
+  background-color: white;
+  width: 75%;
+  height: auto;
+  overflow: visible;;
+}
+
+.cardHeading {
+  font-family: 'Roboto',serif;
+  font-size: 40px;
+}
+
+.center-horizontal{
+  margin: 0 auto;
+}
+
+#mainHeader {
+	font-family:Impact, Charcoal, sans-serif;
+  word-spacing: auto;
+  letter-spacing: 20px;
+  font-size: 75px;
+  text-align: center;
+  padding: 150px 0px 100px 0px;
+  color: black;
+  background-color: white;
+  height: 250px;
+  width: 100vw;
+
+	}
+
+#titleBorder {
+
+  background-color: #D32F2F;
+  width: 100vw;
+  height: 35px;
+  top: 50px;
+}
+
+#cardStack{
+  width: 75%;
+  height: auto;
+  background: none;
+  margin-top: 50px;
+}
