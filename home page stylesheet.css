@@ -22,8 +22,8 @@ body {
 .cardHeading {
   font-family: 'Kaushan Script',serif;
   font-size: 70px;
-  padding-top: 20px;
   text-align: center;
+  margin-top: 0.5em;
 }
 
 .cardContent {
@@ -76,6 +76,11 @@ body {
   width: 32em;
   height: 40em;
   text-align: center;
+}
+
+#cardProjects{
+  width: 60em;
+  height: 35em;
 }
 
 /* Type */
