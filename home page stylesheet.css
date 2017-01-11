@@ -15,27 +15,35 @@ body {
   height: 500px;
   overflow: auto;;
   align-self: center;
-  box-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0px 0px 20px rgba(0,0,0,0.22);
+  box-shadow: 0px 10px 18px rgba(0,0,0,0.25), 0px 0px 20px rgba(0,0,0,0.22);
   border-radius: 5px;
-  text-align: center;
+  transition: all 0.3s;
+}
+
+.card:hover{
+  box-shadow: 0px 19px 38px rgba(0,0,0,0.25), 0px 5px 33px rgba(0,0,0,0.22);
 }
 
 .cardHeading {
   font-family: 'Poiret One',serif;
   font-size: 3vw;
   color: white;
-  background: black;
   margin-top: 0.4em;
   margin-left: 5%;
   margin-right: 5%;
   width: auto;
   height: auto;
+  text-align: center;
 }
 
 .cardContent {
   font-family:  'Inconsolata', serif;
   font-size: 1.5vw;
-  line-height: 200%;
+  color: white;
+  line-height: 5vh;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
 }
 
 .background{
@@ -43,6 +51,7 @@ body {
   height: 100vh;
   margin: 0 auto;
   z-index: 0;
+  background-color: #EEEEEE;
   display: flex;
   justify-content: center;
 }
@@ -56,6 +65,16 @@ body {
   float: right;
 }
 
+.links {
+  color: white;
+  font-weight: 500;
+  font-size: 1vw;
+  font-family: 'Roboto', serif;
+  text-transform: uppercase;
+  position: static;
+  position: bottom;
+}
+
 /* IDs */
 
 #mainHeader {
@@ -66,7 +85,7 @@ body {
   text-align: center;
   padding: 150px 0px 100px 0px;
   color: black;
-  background-color: white;
+  background-color: #EEEEEE;
   height: 250px;
   width: 100vw;
 
@@ -90,7 +109,7 @@ body {
 }
 
 #cardAboutMe{
-  width: 25%;
+  width: 30%;
   height: 60%;
 }
 
@@ -99,17 +118,18 @@ body {
   height: 50%;
 }
 
-#paragraph-horizontal{
+#paragraphs-horizontal{
   column-count: 3;
-  font-size: 1.5vw;
   overflow: auto;
-  margin-top: 2em;
+  font-size: 1.3vw;
+  margin-top: 5vh;
 }
 
 #pushUpCard{
   width: 60%;
   height: 55%;
 }
+
 
 /* Type */
 li{
