@@ -5,6 +5,8 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }
 
 /* classes*/
@@ -14,10 +16,14 @@ body {
   width: 500px;
   height: 500px;
   overflow: auto;;
-  align-self: center;
   box-shadow: 0px 10px 18px rgba(0,0,0,0.25), 0px 0px 20px rgba(0,0,0,0.22);
   border-radius: 5px;
   transition: all 0.3s;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0 1 25%;
+  align-items: center;
 }
 
 .card:hover{
@@ -33,17 +39,17 @@ body {
   margin-right: 5%;
   width: auto;
   height: auto;
-  text-align: center;
+
 }
 
 .cardContent {
   font-family:  'Inconsolata', serif;
-  font-size: 1.5vw;
+  font-size: 2em;
   color: white;
-  line-height: 5vh;
-  padding-left: 16px;
-  padding-right: 16px;
+  line-height: 7vh;
   text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .background{
@@ -57,22 +63,21 @@ body {
 }
 
 .iconImage{
-  width: 25vh;
-  height: 25vh;
-  margin-top: 8%;
-  margin-right: 8%;
-  margin-bottom: 12%;
-  float: right;
+  width: 20vh;
+  height: 20vh;
 }
 
-.links {
+.storeLinks {
   color: white;
-  font-weight: 500;
-  font-size: 1vw;
+  font-weight: 700;
+  font-size: .7vw;
   font-family: 'Roboto', serif;
   text-transform: uppercase;
-  position: static;
-  position: bottom;
+}
+
+.align-flex-center{
+  display: flex;
+  justify-content: space-around;
 }
 
 /* IDs */
@@ -88,7 +93,6 @@ body {
   background-color: #EEEEEE;
   height: 250px;
   width: 100vw;
-
 	}
 
 #titleBorder {
@@ -109,7 +113,7 @@ body {
 }
 
 #cardAboutMe{
-  width: 30%;
+  width: 25%%;
   height: 60%;
 }
 
@@ -121,15 +125,22 @@ body {
 #paragraphs-horizontal{
   column-count: 3;
   overflow: auto;
-  font-size: 1.3vw;
-  margin-top: 5vh;
+  font-size: 1.6em;
+  align-items: space-around;
 }
 
 #pushUpCard{
   width: 60%;
   height: 55%;
+  justify-content: center;
 }
 
+/*
+  keyframes and animations */
+  @keyframes fadeIn {
+    from{opacity:0;}
+    to{opacity: 1;}
+  }
 
 /* Type */
 li{
