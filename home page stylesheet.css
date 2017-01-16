@@ -23,11 +23,12 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 0 1 25%;
+  justify-content: center;
   align-items: center;
 }
 
 .card:hover{
-  box-shadow: 0px 19px 38px rgba(0,0,0,0.25), 0px 5px 33px rgba(0,0,0,0.22);
+  box-shadow: 0px 15px 38px rgba(0,0,0,0.25), 0px 5px 33px rgba(0,0,0,0.22);
 }
 
 .cardHeading {
@@ -63,8 +64,8 @@ body {
 }
 
 .iconImage{
-  width: 20vh;
-  height: 20vh;
+  width: 200px;
+  height: 200px;
 }
 
 .storeLinks {
@@ -75,9 +76,22 @@ body {
   text-transform: uppercase;
 }
 
+.projectDescrition{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .align-flex-center{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectCards {
+  width: 60%;
+  height: 55%;
 }
 
 /* IDs */
@@ -127,12 +141,6 @@ body {
   overflow: auto;
   font-size: 1.6em;
   align-items: space-around;
-}
-
-#pushUpCard{
-  width: 60%;
-  height: 55%;
-  justify-content: center;
 }
 
 /*
