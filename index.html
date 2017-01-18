@@ -5,10 +5,24 @@
   <title>Scott Quach | Home </title>
   <link rel="stylesheet" href="home page stylesheet.css"/>
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Kaushan+Script|Poiret+One|Inconsolata|Roboto+Mono" rel="stylesheet">
+  <script src="script.js"></script>
+  <script src="jquery-3.1.1.js"></script>
+
+  <script src="typed.js"></script>
+  <script>
+  $(function(){
+      $(".element").typed({
+        strings: ["Hi, I'm Scott Quach"],
+        typeSpeed: 100
+      });
+  });
+</script>
+
 </head>
 <body>
-  <div id="mainHeader" >
-    <h2> Hi, I'm Scott Quach </h2>
+  <div id="mainHeader">
+    <h3 class="element"></h3>
+
   </div>
   <div id="titleBorder" >
     <ul id="navList">
@@ -21,11 +35,13 @@
     <!--First card about me -->
     <div class="background">
       <div class="card" id="cardAboutMe" style="background-color: #03A9F4">
+        <div class="algin-flex-vertical">
           <h3 class="cardHeading"> Who am I? </h3>
           <img src="profileImage.jpg" style="border-radius: 50%; width: 10em; height: 10em; margin: .5em auto; display: block;" border="1px"/>
           <article class="cardContent"
             <p> &lt Hi, i'm a college student and aspiring developer drawn to codes ability to turn ideas into reality /&gt</p>
           </article>
+        </div>
       </div>
     </div>
 
@@ -75,9 +91,9 @@
     <!-- Portfolio Website Project -->
     <div class="background">
       <div class="card projectCards" style="background-color: #3F51B5">
-        <h3 class="cardHeading">Website</h3>
-        <p class="cardContent">This website was created by myself utilizing self learned knowledge of fundumental languages such as HTML and CSS.
-          I hope that this will be a continous project as I add new features and designs (such as flexboxes), as front end developement is constantly changing.
+          <h3 class="cardHeading">Website</h3>
+          <p class="cardContent">This website was created by myself utilizing self learned knowledge of fundumental languages such as HTML and CSS.
+            I hope that this will be a continous project as I add new features and designs (such as flexboxes), as front end developement is constantly changing.
       </div>
     </div>
 

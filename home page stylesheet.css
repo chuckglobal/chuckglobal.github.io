@@ -11,6 +11,7 @@ body {
 
 /* classes*/
 
+
 .card {
   background-color: white;
   width: 500px;
@@ -21,10 +22,11 @@ body {
   transition: all 0.3s;
   margin: auto;
   display: flex;
-  flex-direction: column;
-  flex-grow: 0 1 25%;
+  flex-direction: row;
+  flex-grow: 1 1 25%;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 
 .card:hover{
@@ -35,12 +37,12 @@ body {
   font-family: 'Poiret One',serif;
   font-size: 3vw;
   color: white;
-  margin-top: 0.4em;
+  margin-top: .5em;
+  margin-bottom: 40px;
   margin-left: 5%;
   margin-right: 5%;
   width: auto;
   height: auto;
-
 }
 
 .cardContent {
@@ -88,15 +90,29 @@ body {
 }
 
 .align-flex-center{
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
+.algin-flex-vertical{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 .projectCards {
   width: 60%;
   height: 55%;
+  display: flex;
 }
 
 /* IDs */
@@ -139,6 +155,7 @@ body {
 #cardExperience{
   width: 75%;
   height: 50%;
+  flex-direction: column;
 }
 
 #paragraphs-horizontal{
@@ -169,3 +186,35 @@ li{
   text-transform: uppercase;
   padding: 10px 20px;
 }
+
+.typed-cursor{
+    opacity: 0;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+
+/*@media (max-width: 600px){
+  .cardContent{
+    line-height: 35px;
+  }
+  .projectDescrition{
+    line-height: 35px;
+  }
+
+  .projectCards{
+    width: 75%;
+  }
+
+  #cardAboutMe{
+    width: 2em;
+    height: 30em;
+  }
+
+  #cardExperience{
+    width: 85%;
+  }
+
+
+}*/
