@@ -9,6 +9,8 @@ body {
   animation-duration: 2s;
 }
 
+
+
 /* classes*/
 
 
@@ -16,14 +18,13 @@ body {
   background-color: white;
   width: 500px;
   height: 500px;
-  overflow: auto;;
   box-shadow: 0px 10px 18px rgba(0,0,0,0.25), 0px 0px 20px rgba(0,0,0,0.22);
   border-radius: 5px;
   transition: all 0.3s;
   margin: auto;
   display: flex;
   flex-direction: row;
-  flex-grow: 1 1 25%;
+  flex-grow: 0 0 25%;
   justify-content: center;
   align-items: center;
   overflow: auto;
@@ -115,6 +116,11 @@ body {
   display: flex;
 }
 
+.verticalLine {
+  height:250px; width:1px;background:white;
+
+}
+
 /* IDs */
 
 #mainHeader {
@@ -149,20 +155,27 @@ body {
 
 #cardAboutMe{
   width: 25%%;
-  height: 60%;
+  height: 65%;
 }
 
 #cardExperience{
   width: 75%;
-  height: 50%;
+  height: 55%;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 #paragraphs-horizontal{
-  column-count: 3;
+  display: flex;
   overflow: auto;
   font-size: 1.6em;
-  align-items: space-around;
+  line-height: 7vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#linkedin_link{
+  color: #B2EBF2;
 }
 
 /*
@@ -193,28 +206,3 @@ li{
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-
-
-/*@media (max-width: 600px){
-  .cardContent{
-    line-height: 35px;
-  }
-  .projectDescrition{
-    line-height: 35px;
-  }
-
-  .projectCards{
-    width: 75%;
-  }
-
-  #cardAboutMe{
-    width: 2em;
-    height: 30em;
-  }
-
-  #cardExperience{
-    width: 85%;
-  }
-
-
-}*/
