@@ -1,0 +1,147 @@
+*{margin: 0; }
+
+body {
+  background-color: #263238;;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.headings{
+  color: white;
+  font-size: 100px;
+  margin-left: 50px;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.content {
+  font-size: 30px;
+  width: 50vw;
+  color: white;
+}
+
+.experienceContent{
+  margin: 10px 20px 20px 20px;
+  width: 25vw;
+  height: 25vh;
+  text-align: center;
+  font-size: 30px;
+}
+
+.linkStyle{
+  color: #03A9F4;
+}
+.linkStyle:hover{
+  color: #0277BD;
+}
+
+.flex-horizontal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /*margin-top: 25%;*/
+  width: 100%;
+}
+
+.flex-vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.margin {
+  margin: 10px auto;
+}
+
+.typed-cursor{
+  opacity: 0;
+}
+
+.fadeIn{
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+/*
+  ID
+  */
+
+#coverContainer{
+  background-image: url("seattle_backdrop.jpg");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#coverHeading{
+  color: white;
+  font-size: 100px;
+}
+
+#aboutMeContainer{
+  background-image: url("self_portrait_edit.jpg");
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#experienceContainer{
+  background-image: url("desk_top_view.jpg");
+  height: 100vh;
+  width: 100vw;
+}
+
+#pushUpProjectContainer{
+  background-image: url("pushUp_background.jpg");
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#stopProjectContainer{
+  background-image: url("stop_background.jpg");
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#websiteProjectContainer{
+  background-image: url("website_background.jpg");
+  height: 100vh;
+  width: 100vw;
+}
+
+#contactMeContainer{
+  background-image: url("contact_background.jpg");
+  height: 100vh;
+  width: 100vw;
+}
+
+/*
+  Animations
+*/
+@keyframes fadeIn {
+  from{opacity: 0;}
+  to{opacity:1;}
+}
+
+
+
+
+/*
+  Fonts
+*/
+.comfortaa {
+  font-family: 'Comfortaa', cursive;
+}
+.rightous{
+  font-family: 'Righteous', cursive;
+}
+.yellowtail{
+  font-family: 'Yellowtail', cursive;
+}
