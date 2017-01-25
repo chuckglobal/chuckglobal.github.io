@@ -1,25 +1,11 @@
 *{margin: 0 auto;
   padding: 0 auto;}
 
-  /*html
-  {
-      width: 100%;
-      height: 100%;
-      margin: 0px;
-      padding: 0px;
-      overflow-x: auto;
-
-  }*/
 
 body {
   background-color: #263238;;
   animation-name: fadeIn;
   animation-duration: 1.5s;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: auto;
 }
 
 .headings{
@@ -109,6 +95,7 @@ body {
 
 #aboutMeContainer{
   background-image: url("self_portrait_edit.jpg");
+  background-size: cover;
   text-align: center;
 }
 
@@ -133,6 +120,7 @@ body {
 
 #contactMeContainer{
   background-image: url("contact_background.jpg");
+  background-size: cover;
 }
 
 @media (max-width: 1200px) {
@@ -140,6 +128,28 @@ body {
 p {
   font-size: 2em;
 }
+
+.headings{
+  font-size: 4em;
+}
+
+.content{
+  font-size: 1em;
+}
+
+#experienceContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactMeContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 
 }
