@@ -1,9 +1,20 @@
-*{margin: 0; }
+*{margin: 0 auto;
+  padding: 0 auto;}
+
+  html,body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+  }
 
 body {
   background-color: #263238;;
   animation-name: fadeIn;
   animation-duration: 1.5s;
+  overflow-x: hidden;
 }
 
 .headings{
@@ -14,6 +25,11 @@ body {
   opacity: 1;
 }
 
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
 .content {
   font-size: 30px;
   width: 50vw;
@@ -21,8 +37,8 @@ body {
 }
 
 .experienceContent{
-  margin: 10px 20px 20px 20px;
-  width: 25vw;
+  margin: 20px 20px 20px 20px;
+  width: 30vw;
   height: 25vh;
   text-align: center;
   font-size: 30px;
@@ -42,12 +58,14 @@ body {
   align-items: center;
   /*margin-top: 25%;*/
   width: 100%;
+  flex-grow: 1 1 100vw;
 }
 
 .flex-vertical{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-grow: 1 1 100vw;
 }
 
 .margin {
@@ -71,9 +89,9 @@ body {
 
 #coverContainer{
   background-image: url("seattle_backdrop.jpg");
-  height: 100vh;
-  width: 100vw;
+  /*background-color: blue;*/
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -85,41 +103,44 @@ body {
 
 #aboutMeContainer{
   background-image: url("self_portrait_edit.jpg");
-  height: 100vh;
-  width: 100vw;
+  background-size: cover;
   text-align: center;
 }
 
 #experienceContainer{
   background-image: url("desk_top_view.jpg");
-  height: 100vh;
-  width: 100vw;
+  background-size: cover;
 }
 
 #pushUpProjectContainer{
   background-image: url("pushUp_background.jpg");
-  height: 100vh;
-  width: 100vw;
+  background-size: cover;
   text-align: center;
 }
 
 #stopProjectContainer{
   background-image: url("stop_background.jpg");
-  height: 100vh;
-  width: 100vw;
+  background-size: cover;
   text-align: center;
 }
 
 #websiteProjectContainer{
   background-image: url("website_background.jpg");
-  height: 100vh;
-  width: 100vw;
+  background-size: cover;
 }
 
 #contactMeContainer{
   background-image: url("contact_background.jpg");
-  height: 100vh;
-  width: 100vw;
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+
+p {
+  font-size: 2em;
+}
+
+
 }
 
 /*
@@ -137,7 +158,10 @@ body {
   Fonts
 */
 .comfortaa {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  /*font-family: 'Poiret One', cursive;*/
+
+  /*font-family: 'Comfortaa', cursive;*/
 }
 .rightous{
   font-family: 'Righteous', cursive;
