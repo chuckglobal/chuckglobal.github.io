@@ -24,8 +24,8 @@ body {
 
 .headings{
   color: white;
-  font-size: 100px;
-  margin-left: 50px;
+  font-size: 6.25em;
+  margin: 10px 20px 10px 20px;
   text-decoration: underline;
   opacity: 1;
 }
@@ -36,21 +36,24 @@ body {
 }
 
 .content {
-  font-size: 30px;
+  font-size: 1.875em;
   width: 50vw;
   color: white;
+  text-align: left;
 }
 
 .experienceContent{
-  margin: 20px 20px 20px 20px;
-  width: 30vw;
-  height: 25vh;
+  margin: 15px auto;
+  width: 25vw;
+  height: 40vh;
   text-align: center;
   font-size: 30px;
 }
 
 .linkStyle{
   color: #03A9F4;
+  font-size: .75em;
+  font-variant: small-caps;
 }
 .linkStyle:hover{
   color: #0277BD;
@@ -59,18 +62,16 @@ body {
 .flex-horizontal{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  /*margin-top: 25%;*/
-  width: 100%;
-  flex-grow: 1 1 100vw;
+  justify-content: space-around;
 }
 
 .flex-vertical{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1 1 100vw;
+  width: 70vw;
+  height: 100vh;
 }
 
 .margin {
@@ -95,13 +96,14 @@ body {
 #coverContainer{
   background-image: url("seattle_backdrop.jpg");
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 #coverHeading{
   color: white;
+  width: auto;
   font-size: 100px;
 }
 
@@ -113,6 +115,7 @@ body {
 #experienceContainer{
   background-image: url("desk_top_view.jpg");
 }
+
 
 #pushUpProjectContainer{
   background-image: url("pushUp_background.jpg");
