@@ -26,6 +26,7 @@ body {
   width: 50vw;
   color: white;
   text-align: left;
+  margin: 10px 10px 10px 10px;
 }
 
 .experienceContent{
@@ -90,7 +91,7 @@ body {
 #coverHeading{
   color: white;
   width: auto;
-  font-size: 100px;
+  font-size: 6.25em;
 }
 
 #aboutMeContainer{
@@ -123,18 +124,34 @@ body {
   background-size: cover;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
 
 p {
   font-size: 2em;
 }
 
 .headings{
-  font-size: 4em;
+  font-size: 5em;
 }
 
 .content{
-  font-size: 1em;
+  font-size: 1.5em;
+}
+
+.linkStyle{
+  font-size: 1.25em;
+}
+
+#coverContainer{
+  background-image: url("seattle_backdrop_mobile.jpg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#coverheading{
+  font-size: 3em;
 }
 
 #experienceContainer{
@@ -143,14 +160,30 @@ p {
   align-items: center;
 }
 
+
+
+#pushUpProjectContainer{
+
+}
+
+#stopProjectcontainer{
+
+}
+
+#websiteProjectContainer{
+
+}
+
 #contactMeContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-
+#contactContent{
+  font-size: 1em;
+  width: auto;
+}
 
 }
 
