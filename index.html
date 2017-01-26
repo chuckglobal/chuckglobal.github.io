@@ -10,6 +10,7 @@
   <script src="script.js"></script>
   <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 
+  <meta name="viewport" content="width=device-width" />
 
 
 
@@ -25,10 +26,12 @@
 
   <!-- 2nd page -->
   <div id="aboutMeContainer" class="flex-horizontal container">
-    <h1 id="firstHeading"class="headings rightous">About Me</h1>
-    <p class="content comfortaa"> I'm a college student who, when was first introduced to computer science junior year of high school, </br>
-      had to look up what people with CS degrees even did for a living. Since then I have been drawn to code's ability to turn ideas into reality.
-    </p>
+    <h1 class="headings rightous">About Me</h1>
+    <div id="aboutMeContent"class="content comfortaa">
+      <p> I'm a college student who, when was first introduced to computer science junior year of high school,
+        had to look up what people with CS degrees even did for a living. Since then I have been drawn to code's ability to turn ideas into reality.
+      </p>
+    </div>
   </div>
 
   <!-- 3rd page -->
@@ -47,7 +50,7 @@
   </div>
 
   <!-- 4th page -->
-  <div class="flex-horizontal container" id="pushUpProjectContainer" >
+  <div id="pushUpProjectContainer" class="flex-horizontal container"  >
     <h1 class="headings rightous">Push-Up Fitness Tracker</h1>
     <div class="content comfortaa">
       <p>Utlization of the phones proxmity sensor for a contactless push-up tracker</p>
@@ -56,7 +59,7 @@
   </div>
 
   <!-- 5th page -->
-  <div id="stopProjectContainer" class="flex-horizontal container">
+  <div  id="stopProjectContainer" class="flex-horizontal container" >
     <h1 class="headings rightous">Stop</h1>
     <div class="content comfortaa">
       <p>My first foray into app development, a simple game where you try to stop a counter at 100, it's harder than you think.</p>
