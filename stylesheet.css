@@ -24,7 +24,7 @@ body {
 .content {
   font-size: 1.875em;
   width: 50vw;
-  color: white;
+  color: #E0F7Fa;
   text-align: left;
   margin: 10px 10px 10px 10px;
 }
@@ -91,7 +91,7 @@ body {
 }
 
 #coverHeading{
-  color: white;
+  color: #FFCCBC;
   width: auto;
   font-size: 6.25em;
 }
@@ -102,8 +102,16 @@ body {
   text-align: center;
 }
 
+#aboutMeHeader{
+  color: #81D4FA;
+}
+
 #experienceContainer{
   background-image: url("desk_top_view.jpg");
+}
+
+#experienceHeader{
+  color: #C5E1A5;
 }
 
 
@@ -126,6 +134,10 @@ body {
 #contactMeContainer{
   background-image: url("contact_background.jpg");
   background-size: cover;
+}
+
+#contactMeHeader{
+  color: #FFEB3B;
 }
 
 /*
@@ -192,7 +204,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;;
-  height: 100vh;
+  height: 90vh;
 }
 
 .flex-horizontal{
@@ -238,7 +250,7 @@ p {
   align-items: center;
   justify-content: space-around;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
 }
 
 

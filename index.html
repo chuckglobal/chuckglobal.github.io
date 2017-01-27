@@ -26,7 +26,7 @@
 
   <!-- 2nd page -->
   <div id="aboutMeContainer" class="flex-horizontal container">
-    <h1 class="headings rightous">About Me</h1>
+    <h1 id="aboutMeHeader" class="headings rightous">About Me</h1>
     <div id="aboutMeContent"class="content comfortaa">
       <p> I'm a college student who, when was first introduced to computer science junior year of high school,
         had to look up what people with CS degrees even did for a living. Since then I have been drawn to code's ability to turn ideas into reality.
@@ -36,7 +36,7 @@
 
   <!-- 3rd page -->
   <div id="experienceContainer" class="flex-horizontal container ">
-    <h1 class="headings rightous">Experience</h1>
+    <h1 id="experienceHeader"class="headings rightous">Experience</h1>
     <div class="content comfortaa flex-horizontal">
       <div class="flex-vertical">
         <p class="experienceContent">Experience in leadership and project management through the founding and presiding of Hatch, my high school's first computer science club.</p>
@@ -79,12 +79,18 @@
 
   <!-- last page (contact) -->
   <div id="contactMeContainer" class="flex-horizontal container">
-    <h1 class="headings rightous">Contact Me</h1>
+    <h1 id="contactMeHeader" class="headings rightous">Contact Me</h1>
     <div id="contactContent"class="content comfortaa">
       <p class="margin">Email: scottqglobal@gmail.com</p>
       <p class="margin">Phone: 206-375-7522</p>
       <p class="margin">Linkedin: <a class="linkStyle margin" href="https://www.linkedin.com/in/scott-quach-724279122" target="_blank">Link</a></p>
     </div>
+  </div>
+
+  <div class"comfortaa container">
+    <a class="linkStyle" href="https://github.com/mattboldt/typed.js/" target="_blank">Typed.js</a>
+    <a class="linkStyle" href="https://github.com/jlmakes/scrollreveal" target="_blank">scrollreveal</a>
+    <a class="linkStyle" href="https://github.com/lukehaas/Scrollify" target="_blank">Scrollify</a>
   </div>
 
   <!-- typed.js -->
@@ -105,6 +111,8 @@
                    });
                });
    </script>
+
+   <!-- scrollreveal -->
 
    <script>
    window.sr = ScrollReveal().reveal('.headings, .content',{duration:600});
