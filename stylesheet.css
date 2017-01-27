@@ -93,7 +93,7 @@ body {
 }
 
 #coverHeading{
-  color: #FFCCBC;
+  color: white;
   width: auto;
   font-size: 6.25em;
 }
@@ -113,7 +113,7 @@ body {
 }
 
 #experienceHeader{
-  color: #C5E1A5;
+  color: #DCEDC8;
 }
 
 
@@ -123,14 +123,26 @@ body {
   text-align: center;
 }
 
+#pushUpProjectHeader{
+  color:
+}
+
 #stopProjectContainer{
   background-image: url("stop_background.jpg");
   background-size: cover;
   text-align: center;
 }
 
+#stopProjectHeader{
+  color: #;
+}
+
 #websiteProjectContainer{
   background-image: url("website_background.jpg");
+}
+
+#websiteProjectHeader{
+  color: #FFAB91;
 }
 
 #contactMeContainer{
@@ -234,6 +246,8 @@ p {
 }
 
 #aboutMeContainer{
+  background-image: url("self_portrait_mobile.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
