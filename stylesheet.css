@@ -24,7 +24,7 @@ body {
 .content {
   font-size: 1.875em;
   width: 50vw;
-  color: #E0F7Fa;
+  color: #B9FAF8;
   text-align: left;
   margin: 10px 10px 10px 10px;
 }
@@ -38,12 +38,12 @@ body {
 }
 
 .linkStyle{
-  color: #03A9F4;
+  color: #E94F37;
   font-size: .75em;
   font-variant: small-caps;
 }
 .linkStyle:hover{
-  color: #0277BD;
+  color: #CD3B24;
 }
 
 .flex-horizontal{
@@ -75,12 +75,17 @@ body {
   transform: translateY(150px);
   animation: come-in 0.8s ease forwards;
 }
-@keyframes come-in {
-  to { transform: translateY(0); }
-}
+
 /*
   ID
   */
+#downArrow{
+  width: 5em;
+  height: 5em;
+  animation-name: pulse;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
 
 #coverContainer{
   background-image: url("seattle_backdrop.jpg");
@@ -105,7 +110,7 @@ body {
 }
 
 #aboutMeHeader{
-  color: #81D4FA;
+  /*color: #81D4FA;*/
 }
 
 #experienceContainer{
@@ -113,7 +118,7 @@ body {
 }
 
 #experienceHeader{
-  color: #DCEDC8;
+  /*color: #DCEDC8;*/
 }
 
 
@@ -124,7 +129,7 @@ body {
 }
 
 #pushUpProjectHeader{
-  color:
+  /*color:*/
 }
 
 #stopProjectContainer{
@@ -134,7 +139,7 @@ body {
 }
 
 #stopProjectHeader{
-  color: #;
+  /*color: #FFCDD2;*/
 }
 
 #websiteProjectContainer{
@@ -142,7 +147,7 @@ body {
 }
 
 #websiteProjectHeader{
-  color: #FFAB91;
+  /*color: #FFAB91;*/
 }
 
 #contactMeContainer{
@@ -151,7 +156,7 @@ body {
 }
 
 #contactMeHeader{
-  color: #FFEB3B;
+  /*color: #FFEB3B;*/
 }
 
 /*
@@ -162,7 +167,17 @@ body {
   to{opacity:1;}
 }
 
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
 
+@keyframes pulse {
+  0%{opacity: 1;}
+  25%{opacity: 0;}
+  50%{opacity: 1;}
+  75%{opacity: 0;}
+  100%{opacity: 1;}
+}
 
 
 /*
@@ -235,9 +250,9 @@ p {
   background-image: url("seattle_backdrop_mobile.jpg");
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 
 }
 
