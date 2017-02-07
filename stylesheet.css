@@ -29,11 +29,18 @@ body {
   margin: 10px 10px 10px 10px;
 }
 
+.experienceContentHeader{
+  margin-left: 15px;
+  text-align: left;
+  font-size: 25px;
+  font-style: italic;
+}
+
 .experienceContent{
   margin: 15px auto;
   width: 28vw;
   height: 25vh;
-  text-align: center;
+  text-align: left;
   font-size: 25px;
 }
 
@@ -219,7 +226,7 @@ p {
   margin: 0px 15px 15px 15px;
   width: 40vw;
   height: 20vh;
-  text-align: center;
+  text-align: left;
   font-size: 1.25em;
   line-height: 1.10em;
 }
