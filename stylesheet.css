@@ -1,0 +1,265 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.full-screen {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("sunset.jpg");
+  background-size: stretch;
+}
+
+.heading {
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 1px;
+  bottom: -10px;
+  left: 37.5%;
+  background: black;
+  border-bottom: 1px solid #3C93DD;
+}
+
+.section {
+  /* position: relative; */
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #3C93DD;
+  top: 0;
+  bottom: 0;
+  left: 33%;
+}
+
+.timeline-container {
+  padding: 0.5em;
+  position: relative;
+  width: 50%;
+  left: 33%;
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  background: white;
+  border-radius: 4px;
+  radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+div.timeline-container h6 {
+  color: #58585B
+}
+
+/* .timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -5%;
+  background-color: #3C93DD;
+  /* border: 4px solid #FF9F55; */
+  /* top: 15px;
+  border-radius: 50%;
+} */ 
+
+.education-container {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DEE0E2;
+  padding: 10px;
+  max-width: 70%;
+  min-width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+div.education-container h6 {
+  color: #58585B;
+  margin-top: 20px
+}
+
+div.education-container span {
+  color: #58585B;
+}
+
+.education-date {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.project-container {
+  padding: 10px;
+  background: white;
+  margin-bottom: 20px;
+  width: 45%;
+  border-radius: 8px 8px 8px 8px;
+  display: inline;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.project-image {
+  border-radius: 8px 0px 0px 8px;
+  width: 100%;
+  0 height: 100%;
+}
+
+.footer {
+  display: flex;
+}
+
+#splash {
+  font-size: 10em;
+  text-align: center;
+}
+
+#splash h2 {
+  color: white;
+}
+
+#splash h3 {
+  color: #DADCE4;
+}
+
+#title-name {
+  font-size: .70em;
+}
+
+#title-description {
+  font-size: .25em;
+}
+
+#about {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 40% auto 20%;
+}
+
+#about h1 {
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#about p {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  line-height: 2em;
+}
+
+
+#experience {
+  padding: 2em;
+  background: #F2F3F5;
+  display: flex;
+  flex-direction: column;
+}
+
+#education {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#projects {
+  padding: 40px;
+  background: #F2F3F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact {
+  padding: 40px;
+  background: #5B6DFE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact h1 {
+  color: white;
+}
+
+#contact a {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #about {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+
+  #about h1 {
+    align-self: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #about p {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    line-height: 2em;
+  }
+
+  .timeline-container {
+      width: 80%;
+      left: 10%;
+s  }
+
+  .timeline::after {
+    left: 10%;
+  }
+
+  .education-container {
+    max-width: 90%;
+    min-width: 90%;
+    z-index: 2;
+  }
+
+  .education-date {
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+
+  .project-container {
+    width: 90%;
+  }
+
+}
